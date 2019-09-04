@@ -1,0 +1,8 @@
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# vim
+export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a iTerm"'
+
+# emacs
+export ALTERNATE_EDITOR=""
+export PATH="${PATH}:${HOME}/bin"
