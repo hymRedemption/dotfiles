@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 
 " auto complete
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
 Plugin 'honza/vim-snippets'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'

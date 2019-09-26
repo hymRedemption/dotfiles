@@ -6,3 +6,9 @@ export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a iTerm"'
 # emacs
 export ALTERNATE_EDITOR=""
 export PATH="${PATH}:${HOME}/bin"
+
+# nodejs 8
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+# mongodb 4.0
+export PATH="/usr/local/opt/mongodb-community@4.0/bin:$PATH"
