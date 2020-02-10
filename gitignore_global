@@ -75,5 +75,8 @@ tags
 # js
 node_modules/*
 
-#emacs
+# emacs
 .#*
+
+# review board
+.reviewboardrc
