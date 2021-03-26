@@ -360,6 +360,7 @@ you should place your code here."
   (spaceline-toggle-selection-info-off)
   (spaceline-toggle-buffer-position-off)
   (spaceline-toggle-buffer-modified-off)
+  (require 'org-tempo)
   (setq ruby-insert-encoding-magic-comment nil)
 
   (add-to-list 'auto-mode-alist '("\\.es6\\'" . javascript-mode))
