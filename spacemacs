@@ -348,6 +348,11 @@ you should place your code here."
   (setq projectile-enable-caching t)
    ;; go-mode
   (setq go-format-before-save t)
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t)
+     (java . t)
+     (ruby . t)))
 
   (setq neo-theme `arrow)
   (fset 'evil-visual-update-x-selection 'ignore)
@@ -394,6 +399,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(evil-want-Y-yank-to-eol nil)
+ '(org-export-backends '(ascii html icalendar latex md odt confluence))
  '(package-selected-packages
    '(tern yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc transient disaster cython-mode cmake-mode clang-format anaconda-mode pythonic xterm-color tide typescript-mode terraform-mode hcl-mode stickyfunc-enhance srefactor shell-pop org-mime multi-term lv helm-cscope xcscope go-guru go-eldoc go-mode ob-elixir flycheck-mix flycheck-credo flycheck alchemist company elixir-mode sql-indent mmm-mode markdown-toc markdown-mode gh-md projectile-rails inflections feature-mode web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode nginx-mode lua-mode web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors js2-mode js-doc coffee-mode moonscript orgit org-projectile org-pomodoro alert log4e magit-gitflow helm-gitignore evil-magit magit magit-popup git-commit yaml-mode smeargle org-category-capture org-present gntp org-download htmlize gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link with-editor robe bundler rvm ruby-tools ruby-test-mode rubocop rspec-mode rbenv rake minitest chruby inf-ruby ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed dash aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
 (custom-set-faces
