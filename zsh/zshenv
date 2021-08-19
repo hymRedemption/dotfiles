@@ -22,4 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # rbenv
 eval "$(rbenv init -)"
+
+alias rb="rbt post -g -o --target-groups operating"
 export PATH="$PATH:$(go env GOPATH)/bin"
