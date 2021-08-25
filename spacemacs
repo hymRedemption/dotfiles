@@ -37,6 +37,8 @@ values."
      typescript
      (javascript :variables
                  javascript-fmt-tool 'prettier
+                 javascript-fmt-on-save t
+                 js2-basic-offset 2
                  )
      elixir
      sql
