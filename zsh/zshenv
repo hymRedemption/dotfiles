@@ -25,3 +25,4 @@ eval "$(rbenv init -)"
 
 alias rb="rbt post -g -o --target-groups operating"
 export PATH="$PATH:$(go env GOPATH)/bin"
+. "$HOME/.cargo/env"
