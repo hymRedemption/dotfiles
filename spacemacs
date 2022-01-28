@@ -30,7 +30,9 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(protobuf
+   '(rust
+     vimscript
+     protobuf
      restclient
      csv
      python
@@ -79,7 +81,9 @@ values."
      (git :variables
       magit-revision-show-gravatars nil)
      ;; markdown
-     org
+     (org :variables
+          org-enable-org-journal-support t
+          org-enable-roam-support t)
      multiple-cursors
      treemacs
      ;; (shell :variables
@@ -363,6 +367,8 @@ you should place your code here."
      (ruby . t)))
 
   (setq neo-theme `arrow)
+  ;; org-journal model
+  (setq org-journal-dir "~/Dropbox/journal/")
   (fset 'evil-visual-update-x-selection 'ignore)
   (golden-ratio-mode 0)
   ;; (spacemacs/toggle-mode-line)
